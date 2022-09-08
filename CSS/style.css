@@ -1,0 +1,199 @@
+:root{
+     --background: #000000;
+     --specialFont: #49beb7;
+     --specialButton: #071e3d;
+     --fontColor: #fcefee;
+}
+
+@font-face {
+     font-family: silka;
+     src: url(../Fonts/silka-regular-webfont.ttf);
+}
+
+html, body{
+     background: var(--background);
+     margin: 0;
+     padding: 0;
+     height: 100%;
+}
+
+.navigationBar{
+     margin: 0;
+     padding-left: 5%;
+     max-width: 100%;
+     height: 10%;
+     display: flex;
+     background: var(--background);
+     align-items: center;
+     position: sticky;
+     z-index: 100;
+}
+
+.navigationBar .logoText{
+     padding: 0;
+     margin-left: 2%;
+     margin-right: 2%;
+     display: flex;
+}
+
+.navigationBar .logoText h2{
+     font-family: silka;
+     color: var(--specialFont);
+     font-size: 30px;
+}
+
+.navigationBar .navigationButtons{
+     display: flex;
+     width: 55%;
+     height: 100%;
+     margin-left: 2%;
+     margin-right: 2%;
+     justify-content: space-around;
+}
+
+.navigationBar .navigationButtons .navButtons{
+     min-width: 16%;
+     margin-left: 0.5%;
+     margin-right: 0.5%;
+     padding: 1%;
+     font-size: 16px;
+     font-family: silka;
+     font-weight: 600;
+     color: var(--fontColor);
+     background: transparent;
+}
+
+.navigationBar .navigationButtons .navButtons:hover{
+     background: var(--specialButton);
+}
+
+.navigationBar .specialNavigationButtons{
+     width: 35%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     margin-right: 1%;
+     margin-left: 1%;
+}
+
+.navigationBar .specialNavigationButtons .specialNavButtons{
+     width: 50%;
+     height: 50%;
+     border-radius: 22px;
+     margin-left: 2%;
+     margin-right: 2%;
+     font-family: silka;
+     font-size: 14px;
+     font-weight: 800;
+}
+
+#demoButton{
+     background: var(--specialButton);
+     color: var(--fontColor);
+}
+
+.section1{
+     max-width: 100%;
+     height: 100%;
+     padding: 5%;
+     padding-top: 2%;
+     padding-bottom: 8%;
+     margin: 0;
+     /* border: 1px solid green; */
+     background: url(../images/bg1pattern.png);
+}
+
+.section1 .chartandtext{
+     display: flex;
+     width: 100%;
+     height: 60%;
+     margin-bottom: 0;
+     padding-bottom: 5%;
+     /* border: 1px solid purple; */
+     
+}
+
+.section1 .chartandtext .charts{
+     width: 50%;
+     height: 100%;
+     /* border: 1px solid yellow; */
+}
+
+.section1 .chartandtext .text{
+     width: 50%;
+     max-height: 100%;
+     /* border: 1px solid blue; */
+     padding: 2%;
+     color: var(--fontColor);
+}
+
+.section1 .chartandtext .text h1{
+     font-family: silka;
+     font-size: 70px;
+     margin-bottom: 1%;
+}
+
+.section1 .chartandtext .text h4{
+     font-family: silka;
+     font-size: 19px;
+     font-weight: 100;
+     width: 80%;
+     margin-top: 2%;
+     color: #BCA9DD;
+}
+
+.section1 .chartandtext .text .textSpecialButton{
+     width: 40%;
+     height: 10%;
+     margin-top: 6%;
+     border-radius: 22px;
+     font-family: silka;
+     font-size: 18px;
+     font-weight: 800;
+}
+
+.section1 .chartandtext .text .textSpecialButton:hover{
+     background: var(--specialButton);
+     color: var(--fontColor);
+}
+
+.section1 .specialInfo{
+     display: flex;
+     max-width: 100%;
+     height: 30%;
+     /* border: 1px solid red; */
+     padding: 2%;
+     justify-content: space-around;
+     margin-top: 2%;
+}
+
+.section1 .specialInfo .info{
+     width: 25%;
+     height: 70%;
+     padding: 2%;
+     /* border: 1px solid white; */
+     color: white;
+     align-items: center;
+}
+
+.section1 .specialInfo .info h1{
+     text-align: center;
+     font-family: silka;
+     font-size: 35px;
+     margin-bottom: 0;
+}
+
+.section1 .specialInfo .info h6{
+     text-align: center;
+     font-family: silka;
+     font-size: 15px;
+     margin-top: 1%;
+     font-weight: 100;
+}
+
+.section1 .specialInfo .infoIcon{
+     width: 20%;
+     height: 20%;
+     color: var(--specialButton);
+     /* border: 1px solid blue; */
+}
