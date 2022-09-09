@@ -3,6 +3,7 @@
      --specialFont: #49beb7;
      --specialButton: #071e3d;
      --fontColor: #fcefee;
+     --iconColor: #8e8593;
 }
 
 @font-face {
@@ -97,7 +98,7 @@ html, body{
      height: 100%;
      padding: 5%;
      padding-top: 2%;
-     padding-bottom: 8%;
+     padding-bottom: 4%;
      margin: 0;
      /* border: 1px solid green; */
      background: url(../images/bg1pattern.png);
@@ -176,11 +177,24 @@ html, body{
      align-items: center;
 }
 
+.section1 .specialInfo .info:hover{
+     width: 30%;
+     height: 75%;
+     border: 3px solid var(--specialFont);
+     box-shadow: 15px 15px 40px var(--specialButton);
+     border-radius: 15px;
+
+}
+ 
 .section1 .specialInfo .info h1{
      text-align: center;
      font-family: silka;
-     font-size: 35px;
+     font-size: 25px;
      margin-bottom: 0;
+}
+
+.section1 .specialInfo .info:hover h1{
+     font-size: 35px;
 }
 
 .section1 .specialInfo .info h6{
@@ -191,9 +205,158 @@ html, body{
      font-weight: 100;
 }
 
+.section1 .specialInfo .info:hover h6{
+     color: var(--specialFont);
+}
+
 .section1 .specialInfo .infoIcon{
      width: 20%;
      height: 20%;
-     color: var(--specialButton);
+     color: var(--iconColor);
      /* border: 1px solid blue; */
+}
+
+.section1 .specialInfo .info:hover .infoIcon{
+     color: var(--specialFont);
+}
+
+.section2{
+     max-width: 100%;
+     height: 70%;
+     padding: 5%;
+     padding-top: 1%;
+     margin-bottom: 3%;
+     /* border: 1px solid green; */
+     background: url(../images/bg1pattern.png);
+     
+}
+
+.section2 .buildandAPI{
+     width: 100%;
+     height: 110%;
+     background-color: var(--background);
+     background-repeat: no-repeat;
+     background-size: 30%;
+     background-position-x: right;
+     background-position-y: bottom;
+     border-radius: 15px;
+     margin: auto;
+     border: 3px solid var(--specialFont);
+     box-shadow: 15px 15px 40px var(--specialButton);
+     /* border: 1px solid purple;    */
+}
+
+.section2 .buildandAPI .buildandAPIswitch{
+     width: 28%;
+     padding: 2%;
+     /* padding-left: 5%; */
+     /* border: 1px solid violet; */
+}
+
+.section2 .buildandAPI .buildandAPIswitch .btnContainer{
+     display: flex;
+     background: url(../images/bg1Pattern.png);
+     padding: 2%;
+     border-radius: 15px;
+}
+
+.section2 .buildandAPI .buildandAPIswitch .btnContainer .switchBtn{
+     width: 50%;
+     height: 40px;
+     font-family: silka;
+     font-weight: 700;
+     font-size: 15px;
+     border-radius: 15px;
+     outline: none;
+     border: none;
+     margin: 0.5%;
+}
+
+.section2 .buildandAPI .buildandAPIswitch .btnContainer #build{
+     background: var(--specialFont);
+     color: var(--fontColor);
+}
+
+.section2 .buildandAPI .buildandAPIswitch .btnContainer #API{
+     background: transparent;
+     color: var(--fontColor);
+     border: 1px solid var(--iconColor);
+}
+
+.section2 .buildandAPI .build{
+     width: 100%;
+     height: 70%;
+}
+
+.section2 .buildandAPI .build .buildInfo{
+     padding: 3%;
+     padding-left: 5%;
+     padding-bottom: 0;
+     /* border: 1px solid red; */
+}
+
+.section2 .buildandAPI .build .buildInfo h4{
+     color: var(--iconColor);
+     letter-spacing: 7px;
+     font-family: silka;
+     font-size: 20px;
+}
+
+.section2 .buildandAPI .build .buildInfo h1{
+     color: var(--specialFont);
+     font-family: silka;
+     font-size: 40px;
+     width: 50%;
+}
+
+.section2 .buildandAPI .build .buildInfo h6{
+     color: var(--iconColor); 
+     font-family: silka;
+     font-size: 15px;
+     width: 50%;
+}
+
+.section2 .buildandAPI .build .buildButtons{
+     display: flex;
+     padding: 3%;
+     padding-left: 5%;
+     /* border: 1px solid yellow; */
+     justify-content: space-between;
+}
+
+.section2 .buildandAPI .build .buildButtons .buildBtn{
+     width: 33%;
+     height: 60px;
+     font-size: 16px;
+     font-family: silka;
+     font-weight: 500;
+     color: var(--fontColor);
+     background: transparent;
+     border-radius: 16px;
+     outline: none;
+}
+
+.section2 .buildandAPI .build .buildButtons .buildBtn:hover{
+     border: 3px solid var(--specialFont);
+     /* color: black; */
+}
+
+.section2 .buildandAPI .productButton{
+     /* border: 1px solid brown; */
+     height: 11%;
+}
+
+.section2 .buildandAPI .productButton .productBtn{
+     /* border: 1px solid brown; */
+     width: 100%;
+     height: 100%;
+     font-family: silka;
+     font-size: 18px;
+     font-weight: 900;
+     color: var(--fontColor);
+     background: var(--specialFont);
+}
+
+.section2 .buildandAPI .productButton .productBtn:hover{
+     color: black;
 }
